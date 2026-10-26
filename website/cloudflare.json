@@ -1,0 +1,9 @@
+{
+  "name": "youkelili",
+  "account_id": "9754503ae62c09f45807d3a76f09880f",
+  "routes": [
+    {"pattern": "youkelili.xiao-dev.top", "custom_domain": true}
+  ],
+  "workers_dev": false,
+  "preview_urls": false
+}

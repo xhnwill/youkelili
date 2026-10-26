@@ -1,5 +1,7 @@
 # 设计与关键决定
 
+v0.2.0 新增 website/ 独立网页版，部署到用户指定的 Cloudflare Workers 与自定义域名。该版本在浏览器执行音乐核心和导出，仅由 Worker 转发 AI 请求；详情见 WEB_DEPLOYMENT.md。下述 Python 本机版设计继续保留，两种实现通过参考谱测试检查音符、指法与 MIDI 一致性。
+
 ## 数据流
 
 图片 → 浏览器裁剪 → Python 规范化 PNG → 用户指定的视觉接口 → 严格简谱文本 → 人工校对 → 音高序列 → 动态规划指法 → 四线谱、MIDI、MusicXML。

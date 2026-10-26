@@ -1,0 +1,3482 @@
+[
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "C",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 48,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 55,
+        "string": null,
+        "fret": null,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 60,
+        "string": 2,
+        "fret": 0,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 66,
+        "string": 1,
+        "fret": 2,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 70,
+        "string": 0,
+        "fret": 1,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 72,
+        "string": 0,
+        "fret": 3,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 64,
+        "string": 1,
+        "fret": 0,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 62,
+        "string": 2,
+        "fret": 2,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 60,
+        "string": 2,
+        "fret": 0,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0,
+      1
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQMFaHQIAwAACQN1aHQIA3AACQPFaFUIA8AACQQlaBcIBCAACQRlaHQIBGAACQSFaPAIBIAIdAkEBWh0CAQAAAkD5Wh0CAPgAAkDxWh0CAPAAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "C",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 48,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 55,
+        "string": 3,
+        "fret": 0,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 60,
+        "string": 2,
+        "fret": 0,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 66,
+        "string": 1,
+        "fret": 2,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 70,
+        "string": 0,
+        "fret": 1,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 72,
+        "string": 0,
+        "fret": 3,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 64,
+        "string": 1,
+        "fret": 0,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 62,
+        "string": 2,
+        "fret": 2,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 60,
+        "string": 2,
+        "fret": 0,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQMFaHQIAwAACQN1aHQIA3AACQPFaFUIA8AACQQlaBcIBCAACQRlaHQIBGAACQSFaPAIBIAIdAkEBWh0CAQAAAkD5Wh0CAPgAAkDxWh0CAPAAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "C#",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 49,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 56,
+        "string": null,
+        "fret": null,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 61,
+        "string": 2,
+        "fret": 1,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 67,
+        "string": 3,
+        "fret": 0,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 71,
+        "string": 3,
+        "fret": 4,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 73,
+        "string": 0,
+        "fret": 4,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 65,
+        "string": 1,
+        "fret": 1,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 63,
+        "string": 2,
+        "fret": 3,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 61,
+        "string": 2,
+        "fret": 1,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0,
+      1
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQMVaHQIAxAACQOFaHQIA4AACQPVaFUIA9AACQQ1aBcIBDAACQR1aHQIBHAACQSVaPAIBJAIdAkEFWh0CAQQAAkD9Wh0CAPwAAkD1Wh0CAPQAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "C#",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 49,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 56,
+        "string": 3,
+        "fret": 1,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 61,
+        "string": 2,
+        "fret": 1,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 67,
+        "string": 1,
+        "fret": 3,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 71,
+        "string": 0,
+        "fret": 2,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 73,
+        "string": 0,
+        "fret": 4,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 65,
+        "string": 1,
+        "fret": 1,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 63,
+        "string": 2,
+        "fret": 3,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 61,
+        "string": 2,
+        "fret": 1,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQMVaHQIAxAACQOFaHQIA4AACQPVaFUIA9AACQQ1aBcIBDAACQR1aHQIBHAACQSVaPAIBJAIdAkEFWh0CAQQAAkD9Wh0CAPwAAkD1Wh0CAPQAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "Db",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 49,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 56,
+        "string": null,
+        "fret": null,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 61,
+        "string": 2,
+        "fret": 1,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 67,
+        "string": 3,
+        "fret": 0,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 71,
+        "string": 3,
+        "fret": 4,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 73,
+        "string": 0,
+        "fret": 4,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 65,
+        "string": 1,
+        "fret": 1,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 63,
+        "string": 2,
+        "fret": 3,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 61,
+        "string": 2,
+        "fret": 1,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0,
+      1
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQMVaHQIAxAACQOFaHQIA4AACQPVaFUIA9AACQQ1aBcIBDAACQR1aHQIBHAACQSVaPAIBJAIdAkEFWh0CAQQAAkD9Wh0CAPwAAkD1Wh0CAPQAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "Db",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 49,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 56,
+        "string": 3,
+        "fret": 1,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 61,
+        "string": 2,
+        "fret": 1,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 67,
+        "string": 1,
+        "fret": 3,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 71,
+        "string": 0,
+        "fret": 2,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 73,
+        "string": 0,
+        "fret": 4,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 65,
+        "string": 1,
+        "fret": 1,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 63,
+        "string": 2,
+        "fret": 3,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 61,
+        "string": 2,
+        "fret": 1,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQMVaHQIAxAACQOFaHQIA4AACQPVaFUIA9AACQQ1aBcIBDAACQR1aHQIBHAACQSVaPAIBJAIdAkEFWh0CAQQAAkD9Wh0CAPwAAkD1Wh0CAPQAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "D",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 50,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 57,
+        "string": null,
+        "fret": null,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 62,
+        "string": 2,
+        "fret": 2,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 68,
+        "string": 1,
+        "fret": 4,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 72,
+        "string": 0,
+        "fret": 3,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 74,
+        "string": 0,
+        "fret": 5,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 66,
+        "string": 1,
+        "fret": 2,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 64,
+        "string": 1,
+        "fret": 0,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 62,
+        "string": 2,
+        "fret": 2,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0,
+      1
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQMlaHQIAyAACQOVaHQIA5AACQPlaFUIA+AACQRFaBcIBEAACQSFaHQIBIAACQSlaPAIBKAIdAkEJWh0CAQgAAkEBWh0CAQAAAkD5Wh0CAPgAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "D",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 50,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 57,
+        "string": 3,
+        "fret": 2,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 62,
+        "string": 2,
+        "fret": 2,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 68,
+        "string": 1,
+        "fret": 4,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 72,
+        "string": 0,
+        "fret": 3,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 74,
+        "string": 0,
+        "fret": 5,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 66,
+        "string": 1,
+        "fret": 2,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 64,
+        "string": 1,
+        "fret": 0,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 62,
+        "string": 2,
+        "fret": 2,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQMlaHQIAyAACQOVaHQIA5AACQPlaFUIA+AACQRFaBcIBEAACQSFaHQIBIAACQSlaPAIBKAIdAkEJWh0CAQgAAkEBWh0CAQAAAkD5Wh0CAPgAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "Eb",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 51,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 58,
+        "string": null,
+        "fret": null,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 63,
+        "string": 2,
+        "fret": 3,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 69,
+        "string": 0,
+        "fret": 0,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 73,
+        "string": 0,
+        "fret": 4,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 75,
+        "string": 0,
+        "fret": 6,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 67,
+        "string": 3,
+        "fret": 0,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 65,
+        "string": 2,
+        "fret": 5,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 63,
+        "string": 2,
+        "fret": 3,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0,
+      1
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQM1aHQIAzAACQOlaHQIA6AACQP1aFUIA/AACQRVaBcIBFAACQSVaHQIBJAACQS1aPAIBLAIdAkENWh0CAQwAAkEFWh0CAQQAAkD9Wh0CAPwAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "Eb",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 51,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 58,
+        "string": 3,
+        "fret": 3,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 63,
+        "string": 2,
+        "fret": 3,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 69,
+        "string": 0,
+        "fret": 0,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 73,
+        "string": 0,
+        "fret": 4,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 75,
+        "string": 0,
+        "fret": 6,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 67,
+        "string": 1,
+        "fret": 3,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 65,
+        "string": 1,
+        "fret": 1,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 63,
+        "string": 2,
+        "fret": 3,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQM1aHQIAzAACQOlaHQIA6AACQP1aFUIA/AACQRVaBcIBFAACQSVaHQIBJAACQS1aPAIBLAIdAkENWh0CAQwAAkEFWh0CAQQAAkD9Wh0CAPwAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "E",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 52,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 59,
+        "string": null,
+        "fret": null,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 64,
+        "string": 1,
+        "fret": 0,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 70,
+        "string": 1,
+        "fret": 6,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 74,
+        "string": 0,
+        "fret": 5,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 76,
+        "string": 0,
+        "fret": 7,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 68,
+        "string": 3,
+        "fret": 1,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 66,
+        "string": 1,
+        "fret": 2,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 64,
+        "string": 1,
+        "fret": 0,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0,
+      1
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQNFaHQIA0AACQO1aHQIA7AACQQFaFUIBAAACQRlaBcIBGAACQSlaHQIBKAACQTFaPAIBMAIdAkERWh0CARAAAkEJWh0CAQgAAkEBWh0CAQAAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "E",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 52,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 59,
+        "string": 3,
+        "fret": 4,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 64,
+        "string": 1,
+        "fret": 0,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 70,
+        "string": 1,
+        "fret": 6,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 74,
+        "string": 0,
+        "fret": 5,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 76,
+        "string": 0,
+        "fret": 7,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 68,
+        "string": 1,
+        "fret": 4,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 66,
+        "string": 1,
+        "fret": 2,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 64,
+        "string": 1,
+        "fret": 0,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQNFaHQIA0AACQO1aHQIA7AACQQFaFUIBAAACQRlaBcIBGAACQSlaHQIBKAACQTFaPAIBMAIdAkERWh0CARAAAkEJWh0CAQgAAkEBWh0CAQAAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "F",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 53,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 60,
+        "string": 2,
+        "fret": 0,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 65,
+        "string": 2,
+        "fret": 5,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 71,
+        "string": 1,
+        "fret": 7,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 75,
+        "string": 0,
+        "fret": 6,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 77,
+        "string": 0,
+        "fret": 8,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 69,
+        "string": 3,
+        "fret": 2,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 67,
+        "string": 3,
+        "fret": 0,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 65,
+        "string": 1,
+        "fret": 1,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQNVaHQIA1AACQPFaHQIA8AACQQVaFUIBBAACQR1aBcIBHAACQS1aHQIBLAACQTVaPAIBNAIdAkEVWh0CARQAAkENWh0CAQwAAkEFWh0CAQQAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "F",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 53,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 60,
+        "string": 2,
+        "fret": 0,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 65,
+        "string": 2,
+        "fret": 5,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 71,
+        "string": 1,
+        "fret": 7,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 75,
+        "string": 0,
+        "fret": 6,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 77,
+        "string": 0,
+        "fret": 8,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 69,
+        "string": 0,
+        "fret": 0,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 67,
+        "string": 1,
+        "fret": 3,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 65,
+        "string": 1,
+        "fret": 1,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQNVaHQIA1AACQPFaHQIA8AACQQVaFUIBBAACQR1aBcIBHAACQS1aHQIBLAACQTVaPAIBNAIdAkEVWh0CARQAAkENWh0CAQwAAkEFWh0CAQQAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "F#",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 54,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 61,
+        "string": 2,
+        "fret": 1,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 66,
+        "string": 1,
+        "fret": 2,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 72,
+        "string": 0,
+        "fret": 3,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 76,
+        "string": 0,
+        "fret": 7,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 78,
+        "string": 0,
+        "fret": 9,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 70,
+        "string": 0,
+        "fret": 1,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 68,
+        "string": 3,
+        "fret": 1,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 66,
+        "string": 1,
+        "fret": 2,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQNlaHQIA2AACQPVaHQIA9AACQQlaFUIBCAACQSFaBcIBIAACQTFaHQIBMAACQTlaPAIBOAIdAkEZWh0CARgAAkERWh0CARAAAkEJWh0CAQgAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "F#",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 54,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 61,
+        "string": 3,
+        "fret": 6,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 66,
+        "string": 2,
+        "fret": 6,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 72,
+        "string": 1,
+        "fret": 8,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 76,
+        "string": 0,
+        "fret": 7,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 78,
+        "string": 0,
+        "fret": 9,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 70,
+        "string": 1,
+        "fret": 6,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 68,
+        "string": 1,
+        "fret": 4,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 66,
+        "string": 1,
+        "fret": 2,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQNlaHQIA2AACQPVaHQIA9AACQQlaFUIBCAACQSFaBcIBIAACQTFaHQIBMAACQTlaPAIBOAIdAkEZWh0CARgAAkERWh0CARAAAkEJWh0CAQgAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "G",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 55,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 62,
+        "string": 2,
+        "fret": 2,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 67,
+        "string": 3,
+        "fret": 0,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 73,
+        "string": 1,
+        "fret": 9,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 77,
+        "string": 0,
+        "fret": 8,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 79,
+        "string": 0,
+        "fret": 10,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 71,
+        "string": 0,
+        "fret": 2,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 69,
+        "string": 0,
+        "fret": 0,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 67,
+        "string": 1,
+        "fret": 3,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQN1aHQIA3AACQPlaHQIA+AACQQ1aFUIBDAACQSVaBcIBJAACQTVaHQIBNAACQT1aPAIBPAIdAkEdWh0CARwAAkEVWh0CARQAAkENWh0CAQwAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "G",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 55,
+        "string": 3,
+        "fret": 0,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 62,
+        "string": 3,
+        "fret": 7,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 67,
+        "string": 2,
+        "fret": 7,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 73,
+        "string": 1,
+        "fret": 9,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 77,
+        "string": 0,
+        "fret": 8,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 79,
+        "string": 0,
+        "fret": 10,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 71,
+        "string": 0,
+        "fret": 2,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 69,
+        "string": 0,
+        "fret": 0,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 67,
+        "string": 1,
+        "fret": 3,
+        "token": "1"
+      }
+    ],
+    "unplayable": [],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQN1aHQIA3AACQPlaHQIA+AACQQ1aFUIBDAACQSVaBcIBJAACQTVaHQIBNAACQT1aPAIBPAIdAkEdWh0CARwAAkEVWh0CARQAAkENWh0CAQwAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "Ab",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 56,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 63,
+        "string": 2,
+        "fret": 3,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 68,
+        "string": 1,
+        "fret": 4,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 74,
+        "string": 0,
+        "fret": 5,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 78,
+        "string": 0,
+        "fret": 9,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 80,
+        "string": 0,
+        "fret": 11,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 72,
+        "string": 0,
+        "fret": 3,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 70,
+        "string": 0,
+        "fret": 1,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 68,
+        "string": 3,
+        "fret": 1,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQOFaHQIA4AACQP1aHQIA/AACQRFaFUIBEAACQSlaBcIBKAACQTlaHQIBOAACQUFaPAIBQAIdAkEhWh0CASAAAkEZWh0CARgAAkERWh0CARAAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "Ab",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 56,
+        "string": 3,
+        "fret": 1,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 63,
+        "string": 2,
+        "fret": 3,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 68,
+        "string": 1,
+        "fret": 4,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 74,
+        "string": 0,
+        "fret": 5,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 78,
+        "string": 0,
+        "fret": 9,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 80,
+        "string": 0,
+        "fret": 11,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 72,
+        "string": 0,
+        "fret": 3,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 70,
+        "string": 0,
+        "fret": 1,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 68,
+        "string": 1,
+        "fret": 4,
+        "token": "1"
+      }
+    ],
+    "unplayable": [],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQOFaHQIA4AACQP1aHQIA/AACQRFaFUIBEAACQSlaBcIBKAACQTlaHQIBOAACQUFaPAIBQAIdAkEhWh0CASAAAkEZWh0CARgAAkERWh0CARAAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "A",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 57,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 64,
+        "string": 1,
+        "fret": 0,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 69,
+        "string": 0,
+        "fret": 0,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 75,
+        "string": 1,
+        "fret": 11,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 79,
+        "string": 0,
+        "fret": 10,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 81,
+        "string": 0,
+        "fret": 12,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 73,
+        "string": 0,
+        "fret": 4,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 71,
+        "string": 0,
+        "fret": 2,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 69,
+        "string": 0,
+        "fret": 0,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQOVaHQIA5AACQQFaHQIBAAACQRVaFUIBFAACQS1aBcIBLAACQT1aHQIBPAACQUVaPAIBRAIdAkElWh0CASQAAkEdWh0CARwAAkEVWh0CARQAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "A",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 57,
+        "string": 3,
+        "fret": 2,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 64,
+        "string": 1,
+        "fret": 0,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 69,
+        "string": 0,
+        "fret": 0,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 75,
+        "string": 1,
+        "fret": 11,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 79,
+        "string": 0,
+        "fret": 10,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 81,
+        "string": 0,
+        "fret": 12,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 73,
+        "string": 0,
+        "fret": 4,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 71,
+        "string": 0,
+        "fret": 2,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 69,
+        "string": 0,
+        "fret": 0,
+        "token": "1"
+      }
+    ],
+    "unplayable": [],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQOVaHQIA5AACQQFaHQIBAAACQRVaFUIBFAACQS1aBcIBLAACQT1aHQIBPAACQUVaPAIBRAIdAkElWh0CASQAAkEdWh0CARwAAkEVWh0CARQAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "Bb",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 58,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 65,
+        "string": 2,
+        "fret": 5,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 70,
+        "string": 1,
+        "fret": 6,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 76,
+        "string": 0,
+        "fret": 7,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 80,
+        "string": 0,
+        "fret": 11,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 82,
+        "string": 0,
+        "fret": 13,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 74,
+        "string": 0,
+        "fret": 5,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 72,
+        "string": 0,
+        "fret": 3,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 70,
+        "string": 3,
+        "fret": 3,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQOlaHQIA6AACQQVaHQIBBAACQRlaFUIBGAACQTFaBcIBMAACQUFaHQIBQAACQUlaPAIBSAIdAkEpWh0CASgAAkEhWh0CASAAAkEZWh0CARgAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "Bb",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 58,
+        "string": 3,
+        "fret": 3,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 65,
+        "string": 2,
+        "fret": 5,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 70,
+        "string": 1,
+        "fret": 6,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 76,
+        "string": 0,
+        "fret": 7,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 80,
+        "string": 0,
+        "fret": 11,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 82,
+        "string": 0,
+        "fret": 13,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 74,
+        "string": 0,
+        "fret": 5,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 72,
+        "string": 0,
+        "fret": 3,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 70,
+        "string": 0,
+        "fret": 1,
+        "token": "1"
+      }
+    ],
+    "unplayable": [],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQOlaHQIA6AACQQVaHQIBBAACQRlaFUIBGAACQTFaBcIBMAACQUFaHQIBQAACQUlaPAIBSAIdAkEpWh0CASgAAkEhWh0CASAAAkEZWh0CARgAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "B",
+      "tuning": "high-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 59,
+        "string": null,
+        "fret": null,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 66,
+        "string": 2,
+        "fret": 6,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 71,
+        "string": 1,
+        "fret": 7,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 77,
+        "string": 0,
+        "fret": 8,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 81,
+        "string": 0,
+        "fret": 12,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 83,
+        "string": 0,
+        "fret": 14,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 75,
+        "string": 0,
+        "fret": 6,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 73,
+        "string": 0,
+        "fret": 4,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 71,
+        "string": 3,
+        "fret": 4,
+        "token": "1"
+      }
+    ],
+    "unplayable": [
+      0
+    ],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQO1aHQIA7AACQQlaHQIBCAACQR1aFUIBHAACQTVaBcIBNAACQUVaHQIBRAACQU1aPAIBTAIdAkEtWh0CASwAAkElWh0CASQAAkEdWh0CARwAA/y8A"
+  },
+  {
+    "input": {
+      "text": "1, 5, 1/2. #4/4 b7 1' - | 0 3 2 1",
+      "key": "B",
+      "tuning": "low-g",
+      "maxFret": 20
+    },
+    "notes": [
+      {
+        "degree": 1,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 59,
+        "string": 3,
+        "fret": 4,
+        "token": "1,"
+      },
+      {
+        "degree": 5,
+        "octave": -1,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 66,
+        "string": 2,
+        "fret": 6,
+        "token": "5,"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 0.75,
+        "durationFraction": "3/4",
+        "bar": 0,
+        "midi": 71,
+        "string": 1,
+        "fret": 7,
+        "token": "1/2."
+      },
+      {
+        "degree": 4,
+        "octave": 0,
+        "accidental": 1,
+        "duration": 0.25,
+        "durationFraction": "1/4",
+        "bar": 0,
+        "midi": 77,
+        "string": 0,
+        "fret": 8,
+        "token": "#4/4"
+      },
+      {
+        "degree": 7,
+        "octave": 0,
+        "accidental": -1,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 0,
+        "midi": 81,
+        "string": 0,
+        "fret": 12,
+        "token": "b7"
+      },
+      {
+        "degree": 1,
+        "octave": 1,
+        "accidental": 0,
+        "duration": 2.0,
+        "durationFraction": "2",
+        "bar": 0,
+        "midi": 83,
+        "string": 0,
+        "fret": 14,
+        "token": "1'*2"
+      },
+      {
+        "degree": 0,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": null,
+        "string": null,
+        "fret": null,
+        "token": "0"
+      },
+      {
+        "degree": 3,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 75,
+        "string": 0,
+        "fret": 6,
+        "token": "3"
+      },
+      {
+        "degree": 2,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 73,
+        "string": 0,
+        "fret": 4,
+        "token": "2"
+      },
+      {
+        "degree": 1,
+        "octave": 0,
+        "accidental": 0,
+        "duration": 1.0,
+        "durationFraction": "1",
+        "bar": 1,
+        "midi": 71,
+        "string": 0,
+        "fret": 2,
+        "token": "1"
+      }
+    ],
+    "unplayable": [],
+    "midi": "TVRoZAAAAAYAAAABA8BNVHJrAAAAaAD/UQMKLCoA/1gEBAIYCADAGACQO1aHQIA7AACQQlaHQIBCAACQR1aFUIBHAACQTVaBcIBNAACQUVaHQIBRAACQU1aPAIBTAIdAkEtWh0CASwAAkElWh0CASQAAkEdWh0CARwAA/y8A"
+  }
+]

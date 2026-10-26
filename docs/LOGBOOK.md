@@ -1,5 +1,24 @@
 # 项目日志
 
+## 2026-10-26 · v0.2.0 · 网页版
+
+### 需求与决定
+
+- 用户要求无需安装的网页版，随后明确部署到 Cloudflare 账户 9754503ae62c09f45807d3a76f09880f，域名 youkelili.xiao-dev.top。
+- GitHub 继续保存开源源码；网页运行在用户自己的 Cloudflare Workers，不发布到 GitHub Pages 或 Sites。
+- 复用已有界面，将简谱处理、指法、试听和导出迁移到浏览器，仅保留无状态 AI 识谱转发服务。
+- 保留已有 Windows 源码和 v0.1.0 成品包；本次新增网站在 website/。
+
+### 实现与验证
+
+- 新增无依赖浏览器音乐核心、与 Python 参考实现的 26 组结果对照。
+- 新增 10 项 Node 测试：音高、节奏、音域、导出、接口协议、密钥不回显、错误与重定向处理。
+- 完成本地浏览器示例生成检查、生产构建与 Wrangler dry-run。
+- 检查 Cloudflare 已登录账户与用户指定目标一致，域名区域 active，目标 Worker 与自定义域名原本不存在。
+- 部署 Worker youkelili，绑定 youkelili.xiao-dev.top，Cloudflare 版本 ID d45449f0-5cb7-4b30-966e-43d44a24b236。
+- 公网首页、core.mjs 与 /api/version 均 HTTP 200，版本接口确认 0.2.0 / 2026-10-26 / cloudflare-workers。
+- 未配置真实视觉模型密钥，未声称实际图片 AI 识谱准确率。
+
 ## 2026-10-26 · v0.1.0
 
 ### 需求与决定
