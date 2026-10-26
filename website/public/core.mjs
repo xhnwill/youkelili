@@ -1,5 +1,5 @@
 /** JianpuUke 0.2.0: browser-only music semantics and exports (MIT). */
-export const VERSION="0.2.0", BUILD_DATE="2026-10-26";
+export const VERSION="0.3.0", BUILD_DATE="2026-10-26";
 export const KEYS={C:0,"C#":1,Db:1,D:2,Eb:3,E:4,F:5,"F#":6,G:7,Ab:8,A:9,Bb:10,B:11};
 export const TUNINGS={"high-g":[69,64,60,67],"low-g":[69,64,60,55]};
 const SCALE=[0,2,4,5,7,9,11];

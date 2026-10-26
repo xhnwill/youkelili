@@ -1,6 +1,8 @@
 # 网页版部署
 
-版本 0.2.0 · 2026-10-26
+当前版本 0.3.0 · 2026-10-26
+
+当前 Cloudflare 版本 ID：d96435d5-d0bb-4baa-94ca-1c4d1d29dc8e。新增简谱之家目录、搜索、预览和单页导入，详见 CATALOG.md 和项目日志。17 项 Node 测试、生产构建、本地 Edge 交互及公网目录／搜索／翻页／详情／图片接口均已验证；公网自动化导航超时，未完成公网视觉复核。
 
 网址：https://youkelili.xiao-dev.top
 
@@ -9,7 +11,7 @@
 - Cloudflare 账户：9754503ae62c09f45807d3a76f09880f（用户明确指定）。
 - Worker：youkelili。
 - 自定义域名：youkelili.xiao-dev.top。
-- 发布版本 ID：d45449f0-5cb7-4b30-966e-43d44a24b236。
+- 初次 v0.2.0 发布版本 ID：d45449f0-5cb7-4b30-966e-43d44a24b236。
 - GitHub 仓库：xhnwill/youkelili，网页源码在 website/。
 
 没有将本版本发布到 GitHub Pages 或 Sites。早期准备过程中创建的 Sites 私有草稿未发布，最终按照用户指定的 Cloudflare 目标部署。

@@ -1,4 +1,5 @@
 import {convert, svg, midi, musicxml, VERSION, BUILD_DATE} from "/core.mjs";
+import {initCatalog} from "/catalog.js";
 "use strict";
 const $ = id => document.getElementById(id);
 const state = {token:"", image:null, original:"", crop:null, settings:null, score:null, payload:null,
@@ -264,3 +265,13 @@ $("quitBtn").onclick=()=>{
 };
 state.token="browser-local";
 $("versionText").textContent="简谱小尤网页版 v"+VERSION+" · "+BUILD_DATE;
+initCatalog({
+  isBusy:()=>state.busy,toast,
+  onImport:async({dataUrl,title,sourceUrl,page})=>{
+    dirty();await loadImage(dataUrl,title+" · 第 "+page+" 张");
+    $("titleInput").value=title;$("notesInput").value="";
+    $("scoreOutput").replaceChildren();$("scoreEmpty").hidden=false;
+    $("noteSummary").textContent="";
+    notices("ocrWarnings",["已从简谱之家导入图片，尚未进行 AI 识别。来源："+sourceUrl]);
+  }
+});
