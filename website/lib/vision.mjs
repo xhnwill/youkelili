@@ -38,6 +38,45 @@ function validateImage(image) {
   const w=int(16),h=int(20);
   if(!w||!h||w*h>24000000)reject("图片像素过多或无效，请先缩小。");
 }
+function completionBody(model,image) {
+  // Match official and vendor-prefixed Kimi K3 IDs, including Coding Plan aliases.
+  const kimiK3=/(?:^|[\s/:])(?:kimi[-_ ]?)?k3(?:[.\s_-]|$)/i.test(model);
+  return {model,messages:[{role:"user",content:[{type:"text",text:PROMPT},{type:"image_url",image_url:{url:image}}]}],
+    response_format:{type:"json_object"},
+    ...(kimiK3?{max_completion_tokens:32768,reasoning_effort:"low"}:{max_tokens:6000})};
+}
+function readTranscription(message) {
+  let content=message?.content;
+  if(Array.isArray(content))content=content.filter(x=>x?.type==="text"&&typeof x.text==="string").map(x=>x.text).join("");
+  if(typeof content!=="string"||!content.trim()) {
+    if(message?.reasoning_content)reject("AI 只返回了思考过程，没有最终识谱结果。请确认模型名称，或裁剪一行后重试。",502);
+    reject("AI 未返回最终文本。请确认接口使用 Chat Completions 格式，并支持图片输入。",502);
+  }
+  // Some gateways mix closed thinking tags or explanations into the final content.
+  // Never promote reasoning_content to a transcription or repair incomplete JSON.
+  content=content.replace(/<think\b[^>]*>[\s\S]*?<\/think>/gi,"").trim();
+  if(/<think\b/i.test(content))reject("AI 的思考过程尚未结束，没有可导入的最终结果。请裁剪一行后重试。",502);
+  let obj;
+  try {obj=JSON.parse(content);}catch {
+    const candidates=[];let start=-1,depth=0,quoted=false,escaped=false;
+    for(let i=0;i<content.length;i++) {
+      const char=content[i];
+      if(start<0){if(char==="{"){start=i;depth=1;}continue;}
+      if(quoted){if(escaped)escaped=false;else if(char==="\\")escaped=true;else if(char==='"')quoted=false;continue;}
+      if(char==='"')quoted=true;
+      else if(char==="{")depth++;
+      else if(char==="}"&&!--depth){
+        try {candidates.push(JSON.parse(content.slice(start,i+1)));}catch{}
+        start=-1;
+      }
+    }
+    if(candidates.length!==1||start>=0)reject("AI 的最终回复不是完整的识谱 JSON。请裁剪一行后重试，或检查服务商的 JSON 输出支持。",502);
+    obj=candidates[0];
+  }
+  if(!obj||Array.isArray(obj)||typeof obj!=="object"||typeof obj.text!=="string"||!obj.text.trim())
+    reject("AI 返回的 JSON 缺少有效的 text 音符字段。请确认使用支持图片理解的模型，或裁剪清晰的一行后重试。",502);
+  return obj;
+}
 export async function recognize(request,fetchImpl=fetch) {
   const headers={"Content-Type":"application/json; charset=utf-8","Cache-Control":"no-store","X-Content-Type-Options":"nosniff"};
   const reply=(data,status=200)=>new Response(JSON.stringify(data),{status,headers});
@@ -53,28 +92,36 @@ export async function recognize(request,fetchImpl=fetch) {
     if(!model||model.length>200)reject("请填写服务商提供的视觉模型名称。");
     if(key.length>4096||/[\r\n]/.test(key))reject("API Key 格式无效。");
     validateImage(data.image);
-    const response=await fetchImpl(endpoint,{method:"POST",redirect:"manual",signal:AbortSignal.timeout(90000),
-      headers:{"Content-Type":"application/json",...(key?{Authorization:"Bearer "+key}:{})},
-      body:JSON.stringify({model,messages:[{role:"user",content:[{type:"text",text:PROMPT},{type:"image_url",image_url:{url:data.image}}]}],max_tokens:6000})});
+    const payload=completionBody(model,data.image),signal=AbortSignal.timeout(180000);
+    const send=()=>fetchImpl(endpoint,{method:"POST",redirect:"manual",signal,
+      headers:{"Content-Type":"application/json",...(key?{Authorization:"Bearer "+key}:{})},body:JSON.stringify(payload)});
+    let response=await send();let formatFallback=false;
+    if(response.status===400||response.status===422) {
+      // Retry only an explicit parameter rejection, never a completed generation.
+      let error;try{error=JSON.parse(await boundedText(response.body,65536)).error;}catch{}
+      const detail=typeof error?.message==="string"?error.message:"";
+      if((error?.param==="response_format"||/\bresponse_format\b/i.test(detail))&&
+        /not supported|unsupported|not allowed|unrecognized|unknown parameter|不支持|不允许/i.test(detail)) {
+        delete payload.response_format;formatFallback=true;response=await send();
+      }
+    }
     if(!response.ok) {
       await response.body?.cancel();
       if(response.status>=300&&response.status<400)reject("接口发生重定向，已停止以避免把密钥转发到其他地址。",502);
       reject("AI 接口返回 HTTP "+response.status+"，请检查地址、模型、密钥和额度。",502);
     }
-    let obj;
-    try {
-      const result=JSON.parse(await boundedText(response.body,2*1024*1024));
-      let content=result.choices?.[0]?.message?.content;
-      if(typeof content!=="string")throw new Error();
-      content=content.trim();
-      if(content.startsWith(String.fromCharCode(96).repeat(3)))content=content.slice(content.indexOf("\n")+1,content.lastIndexOf(String.fromCharCode(96).repeat(3)));
-      obj=JSON.parse(content);
-    } catch(e){if(e instanceof RequestError)throw e;reject("AI 未返回约定的 JSON，请换用支持图片与 JSON 输出的模型。",502);}
-    if(!obj||Array.isArray(obj)||typeof obj!=="object")reject("AI 必须返回 JSON 对象。",502);
-    parse(obj.text);
+    let result;try{result=JSON.parse(await boundedText(response.body,2*1024*1024));}
+    catch(e){if(e instanceof RequestError)throw e;reject("AI 接口返回了非 JSON 数据，请检查完整接口地址和服务商状态。",502);}
+    const choice=result?.choices?.[0];
+    if(choice?.finish_reason==="length")reject("AI 回复达到输出上限，识谱结果被截断，未导入不完整音符。请裁剪为一行或更短的片段后重试。",502);
+    if(choice?.finish_reason==="content_filter"||choice?.message?.refusal)reject("AI 服务拒绝了本次图片识别，请检查图片内容或联系服务商。",502);
+    const obj=readTranscription(choice?.message);
+    try {parse(obj.text);}catch{reject("AI 转录格式需要人工修正：JSON 已解析，但音符记号不符合简谱格式。请裁剪一行后重试，或手动输入校对。",422);}
     const uncertain=Array.isArray(obj.uncertain)?obj.uncertain:obj.uncertain?[String(obj.uncertain)]:[];
     return reply({text:obj.text,key:obj.key??null,meter:obj.meter??null,boxes:[],engine:"vision",
-      warnings:["AI 识别为草稿，请对照原图校对音点、减时线和调号。",...uncertain.slice(0,50).map(x=>String(x).slice(0,300))]});
+      warnings:["AI 识别为草稿，请对照原图校对音点、减时线和调号。",
+        ...(formatFallback?["服务商不支持 JSON 模式，已使用提示词约束并校验最终结果。"]:[]),
+        ...uncertain.slice(0,50).map(x=>String(x).slice(0,300))]});
   } catch(error) {
     if(error instanceof RequestError)return reply({error:error.message},error.status);
     if(error?.name==="TimeoutError"||error?.name==="AbortError")return reply({error:"AI 接口请求超时，请稍后重试。"},504);

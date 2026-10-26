@@ -23,7 +23,7 @@ async function api(path, body, binary=false) {
     if(kind==="musicxml")return new Blob([musicxml(score)],{type:"application/vnd.recordare.musicxml+xml"});
   }
   const controller=new AbortController();
-  const timer=setTimeout(()=>controller.abort(),110000);
+  const timer=setTimeout(()=>controller.abort(),200000);
   try {
     const response=await fetch(path,{method:"POST",headers:{"Content-Type":"application/json","X-Session-Token":state.token},
       body:JSON.stringify(body),signal:controller.signal});
@@ -151,7 +151,7 @@ $("recognizeBtn").onclick=async()=>{
   if(!state.image)return;
   if(!state.settings){$("settingsDialog").showModal();return;}
   state.busy=true;document.body.classList.add("busy");$("recognizeBtn").disabled=true;
-  $("recognizeBtn").textContent="正在识谱，请稍候…";$("notesInput").disabled=true;$("convertBtn").disabled=true;
+  $("recognizeBtn").textContent="正在识谱，思考模型可能需要约 3 分钟…";$("notesInput").disabled=true;$("convertBtn").disabled=true;
   const revision=state.imageRevision;
   try {
     const result=await api("/api/recognize",{image:selectedImage(),settings:state.settings});

@@ -42,6 +42,8 @@ cloudflare.json 明确声明账户 ID、Worker 名称和唯一自定义域名。
 
 填写完整 HTTPS Chat Completions 地址、支持图片的模型名和自己的 API Key。网页版拒绝 HTTP、IP 字面地址、内网主机名、URL 内凭据和重定向。不支持访问个人电脑上的 localhost 模型；本机版仍可按其原有方式配置。
 
+Kimi K3 模型自动使用 max_completion_tokens、较低思考强度与 JSON 模式；最终 JSON 的说明文字、代码围栏和文本块会兼容解析，截断和仅思考回复会单独提示。仅在服务商明确拒绝 response_format 参数时重试一次，不自动重试已经生成的内容。详细配置与验证边界见 ../docs/AI_INTERFACE.md。
+
 服务商若只支持不同请求协议，需要增加适配器，不能仅改模型名。API Key 和地址不进入保存的工程。
 
 ## 目录
@@ -55,6 +57,6 @@ cloudflare.json 明确声明账户 ID、Worker 名称和唯一自定义域名。
 - cloudflare.json：用户明确指定的 Cloudflare Worker／账户／自定义域名。
 - components/、hooks/、db/、drizzle/、examples/：保留的模板支持；当前页面不使用数据库或连接器。
 
-17 项 Node 测试覆盖来源站解析、分页、选图、来源限制，以及 26 组调号／定弦与 Python 参考结果、音域、节奏、导出和模拟视觉协议。真实 AI 准确率仍需要配置实际服务并逐音检查用户谱图。
+25 项 Node 测试覆盖来源站解析、分页、选图、来源限制，以及 26 组调号／定弦与 Python 参考结果、音域、节奏、导出和模拟视觉协议。真实 AI 准确率仍需要配置实际服务并逐音检查用户谱图。
 
 项目源码：https://github.com/xhnwill/youkelili
