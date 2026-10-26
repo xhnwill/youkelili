@@ -1,6 +1,6 @@
 /** JianpuUke 0.2.0: browser-only music semantics and exports (MIT). */
-export const VERSION="0.3.1", BUILD_DATE="2026-10-26";
-export const KEYS={C:0,"C#":1,Db:1,D:2,Eb:3,E:4,F:5,"F#":6,G:7,Ab:8,A:9,Bb:10,B:11};
+export const VERSION="0.4.0", BUILD_DATE="2026-10-26";
+export const KEYS={C:0,"C#":1,Db:1,D:2,Eb:3,E:4,F:5,"F#":6,Gb:6,G:7,Ab:8,A:9,Bb:10,B:11};
 export const TUNINGS={"high-g":[69,64,60,67],"low-g":[69,64,60,55]};
 const SCALE=[0,2,4,5,7,9,11];
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -26,19 +26,23 @@ function noteToken(note) {
     }
   }
   return(note.accidental>0?"#":note.accidental<0?"b":"")+note.degree+
-    "'".repeat(Math.max(0,note.octave))+",".repeat(Math.max(0,-note.octave))+suffix;
+    "'".repeat(Math.max(0,note.octave))+",".repeat(Math.max(0,-note.octave))+suffix+(note.tieStart?" ~":"");
 }
 export function parse(input) {
   if(typeof input!=="string"||!input.trim())fail("请先识别图片，或输入简谱。");
   if(input.length>20000)fail("简谱过长，请分段处理（最多 20,000 字符）。");
   const text=input.split(/\r?\n/).map(line=>line.split(";")[0]).join("\n").replace(/｜/g,"|").replace(/’/g,"'").replace(/，/g,",").replace(/[—–]/g,"-");
   const re=/([#b]?)([0-7])([',]*)(?:(\/|\*)([0-9]+))?(\.)?/y;
-  const notes=[];let pos=0,bar=0,lastBar=false;
+  const notes=[];let pos=0,bar=0,lastBar=false,tiePending=false;
   while(pos<text.length) {
     if(/\s/.test(text[pos])){pos++;continue;}
     if(text[pos]==="|"){if(notes.length&&!lastBar)bar++;lastBar=true;pos++;continue;}
+    if(text[pos]==="~") {
+      if(!notes.length||lastBar||!notes.at(-1).degree||tiePending)fail("延音连接 ~ 必须位于有音高的音符后，连接相同音高的下一个音。");
+      notes.at(-1).tieStart=true;tiePending=true;pos++;continue;
+    }
     if(text[pos]==="-") {
-      if(!notes.length||lastBar)fail("延音线 - 必须紧跟本小节已有的音符。");
+      if(!notes.length||lastBar||tiePending)fail("延音线 - 必须紧跟本小节已有的音符。");
       notes.at(-1).duration++;
       if(notes.at(-1).duration>32)fail("单个音符最多 32 拍。");pos++;continue;
     }
@@ -57,10 +61,18 @@ export function parse(input) {
     if(duration>32)fail("单个音符最多 32 拍。");
     if(degree==="0"&&(acc||marks))fail("休止符 0 不能带升降号或高低音点。");
     if(notes.length>=4096)fail("一次最多处理 4096 个音符。");
-    notes.push({degree:Number(degree),octave:[...marks].reduce((n,c)=>n+(c==="'"?1:-1),0),
-      accidental:acc==="#"?1:acc==="b"?-1:0,duration,bar,midi:null,string:null,fret:null});
+    const note={degree:Number(degree),octave:[...marks].reduce((n,c)=>n+(c==="'"?1:-1),0),
+      accidental:acc==="#"?1:acc==="b"?-1:0,duration,bar,midi:null,string:null,fret:null};
+    if(tiePending) {
+      const previous=notes.at(-1);
+      if(!note.degree||previous.degree!==note.degree||previous.octave!==note.octave||previous.accidental!==note.accidental)
+        fail("延音连接 ~ 只能连接相同音高，不能连接休止或不同的音。");
+      note.tieStop=true;tiePending=false;
+    }
+    notes.push(note);
     lastBar=false;pos=re.lastIndex;
   }
+  if(tiePending)fail("延音连接 ~ 后缺少相同音高的音符。");
   if(!notes.length)fail("没有找到有效音符。");
   return notes;
 }
@@ -85,7 +97,8 @@ export function convert(payload) {
       if(j===0||active[j]!==active[j-1]+1) {
         const k=j?argmin(costs[j-1]):0;row.push(own+(j?costs[j-1][k]:0));back.push(k);
       } else {
-        const choices=candidates[j-1].map(([ps,pf],k)=>costs[j-1][k]+(f&&pf?Math.abs(f-pf)*.85:.45)+Math.abs(s-ps)*.4+own);
+        const choices=candidates[j-1].map(([ps,pf],k)=>notes[active[j]].tieStop&&(s!==ps||f!==pf)?Infinity:
+          costs[j-1][k]+(f&&pf?Math.abs(f-pf)*.85:.45)+Math.abs(s-ps)*.4+own);
         const k=argmin(choices);row.push(choices[k]);back.push(k);
       }
     }
@@ -143,12 +156,16 @@ export function svg(score) {
       for(let dot=0;dot<Math.abs(n.octave);dot++)out.push('<circle cx="'+x+'" cy="'+(n.octave>0?y-27-dot*7:y+10+dot*7)+'" r="1.8" fill="#24352e"/>');
       if(!n.degree)out.push('<text x="'+x+'" y="'+(y+78)+'" text-anchor="middle" class="muted">休</text>');
       else if(n.fret===null)out.push('<text x="'+x+'" y="'+(y+78)+'" text-anchor="middle" class="fret bad">×</text>');
-      else out.push('<text x="'+x+'" y="'+(y+50+n.string*21)+'" text-anchor="middle" class="fret">'+n.fret+'</text>');
+      else out.push('<text x="'+x+'" y="'+(y+50+n.string*21)+'" text-anchor="middle" class="fret">'+(n.tieStop?'('+n.fret+')':n.fret)+'</text>');
+      if(n.tieStart) {
+        if(j<items.length-1)out.push('<path d="M '+x+' '+(y+21)+' Q '+(x+step/2)+' '+(y+39)+' '+(x+step)+' '+(y+21)+'" stroke="#536e5f" fill="none"/>');
+        else out.push('<text x="'+x+'" y="'+(y+26)+'" text-anchor="middle" class="muted">延 →</text>');
+      } else if(n.tieStop&&j===0)out.push('<text x="'+x+'" y="'+(y+26)+'" text-anchor="middle" class="muted">← 延</text>');
       out.push('<text x="'+x+'" y="'+(y+132)+'" text-anchor="middle" class="muted">'+n.durationFraction+'拍</text></g>');index++;
     }
     out.push('<line x1="'+right+'" x2="'+right+'" y1="'+(y+43)+'" y2="'+(y+106)+'" stroke="#68786e"/>');
   }
-  out.push('<text x="52" y="'+(height-12)+'" class="muted">简谱小尤 JianpuUke · 数字为品位，0 为空弦；× 表示超出音域。请核对原谱与指法。</text></svg>');
+  out.push('<text x="52" y="'+(height-12)+'" class="muted">简谱小尤 JianpuUke · 数字为品位，0 为空弦；括号品位为延续音，不重新拨弦；× 表示超出音域。</text></svg>');
   return out.join("");
 }
 function variable(n){const a=[n&127];while(n>>7){n>>=7;a.unshift(128|(n&127));}return a;}
@@ -156,8 +173,10 @@ const be=(n,size)=>Array.from({length:size},(_,i)=>(n>>>((size-i-1)*8))&255);
 export function midi(score) {
   const [n,d]=score.meter.split("/").map(Number),events=[0,255,81,3,...be(Math.floor(60000000/score.bpm),3),0,255,88,4,n,d===4?2:3,24,8,0,192,24];
   let pending=0;
-  for(const note of score.notes) {
-    const ticks=note.duration*960;
+  for(let i=0;i<score.notes.length;i++) {
+    const note=score.notes[i];let duration=note.duration;
+    while(score.notes[i].tieStart){i++;duration+=score.notes[i].duration;}
+    const ticks=duration*960;
     if(note.midi===null){pending+=ticks;continue;}
     if(note.midi<0||note.midi>127)fail("MIDI 音高须在 0–127 范围内。");
     events.push(...variable(pending),144,note.midi,86,...variable(ticks),128,note.midi,0);pending=0;
@@ -168,7 +187,7 @@ export function midi(score) {
 export function musicxml(score) {
   if(score.unplayable.length)fail("存在超出音域的音符，请先调整后再导出 MusicXML。");
   const out=['<?xml version="1.0" encoding="UTF-8"?>\n<score-partwise version="4.0"><work><work-title>'+escape(score.title)+'</work-title></work><part-list><score-part id="P1"><part-name>Ukulele</part-name></score-part></part-list><part id="P1">'];
-  const fifths={C:0,"C#":7,Db:-5,D:2,Eb:-3,E:4,F:-1,"F#":6,G:1,Ab:-4,A:3,Bb:-2,B:5},letters="CDEFGAB",natural={C:0,D:2,E:4,F:5,G:7,A:9,B:11};
+  const fifths={C:0,"C#":7,Db:-5,D:2,Eb:-3,E:4,F:-1,"F#":6,Gb:-6,G:1,Ab:-4,A:3,Bb:-2,B:5},letters="CDEFGAB",natural={C:0,D:2,E:4,F:5,G:7,A:9,B:11};
   const bars=[...new Set(score.notes.map(n=>n.bar))];
   for(const [i,bar]of bars.entries()) {
     out.push('<measure number="'+(bar+1)+'">');
@@ -186,7 +205,9 @@ export function musicxml(score) {
         out.push("<pitch><step>"+step+"</step>"+(alter?"<alter>"+alter+"</alter>":"")+"<octave>"+octave+"</octave></pitch>");
       }
       out.push("<duration>"+note.duration*960+"</duration>");
-      if(note.midi!==null)out.push("<notations><technical><string>"+(note.string+1)+"</string><fret>"+note.fret+"</fret></technical></notations>");
+      if(note.tieStop)out.push('<tie type="stop"/>');
+      if(note.tieStart)out.push('<tie type="start"/>');
+      if(note.midi!==null)out.push("<notations>"+(note.tieStop?'<tied type="stop"/>':"")+(note.tieStart?'<tied type="start"/>':"")+"<technical><string>"+(note.string+1)+"</string><fret>"+note.fret+"</fret></technical></notations>");
       out.push("</note>");
     }
     out.push("</measure>");

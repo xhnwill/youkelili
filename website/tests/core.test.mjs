@@ -42,3 +42,20 @@ test("browser core matches the existing Python implementation across reference s
     assert.equal(Buffer.from(midi(result)).toString("base64"),f.midi);
   }
 });
+test("ties cross barlines while preserving position and producing a single MIDI attack",()=>{
+  const score=convert({text:"1 - - 1/2 1/2 ~ | 1 - - -",key:"Gb",maxFret:15});
+  const tied=score.notes.slice(-2);
+  assert.ok(tied[0].tieStart&&tied[1].tieStop);
+  assert.equal(tied[0].string,tied[1].string);assert.equal(tied[0].fret,tied[1].fret);
+  assert.deepEqual(score.warnings,[]);
+  const data=Buffer.from(midi(score));assert.equal([...data].filter(x=>x===144).length,3);
+  assert.match(musicxml(score),/<fifths>-6<\/fifths>/);
+  assert.match(musicxml(score),/<tie type="start"\/>/);assert.match(musicxml(score),/<tie type="stop"\/>/);
+  assert.match(svg(score),/括号品位为延续音/);
+});
+test("ties reject different pitches, rests, dangling markers and malformed extensions",()=>{
+  for(const text of ["~ 1","1 ~ 2","1 ~ 1'","1 ~ #1","0 ~ 0","1 ~ 0","1 ~","1 ~ ~ 1","1 | ~ 1","1 ~ - 1"])assert.throws(()=>parse(text));
+  const chain=convert({text:"1 ~ 1 ~ 1"});
+  const data=Buffer.from(midi(chain));assert.equal([...data].filter(x=>x===144).length,1);
+  assert.ok(data.includes(Buffer.from([0x96,0x40,128,60,0]))); // 2880 ticks, one three-beat note.
+});

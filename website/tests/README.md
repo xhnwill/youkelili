@@ -9,3 +9,5 @@ catalog.test.mjs：目录／搜索／详情解析、真实表单字段、搜索 
 parity-fixtures.json：从已有 Python 0.1.0 音乐实现生成的 26 组参考谱；用于检查迁移后行为一致性，不是识谱准确率数据。
 
 运行 node --test tests/*.test.mjs。测试使用模拟响应，不消耗 API 额度。
+
+examples.test.mjs：65 小节反复路线、全小节四拍、无越界弦位、最高13品及歧义说明保留；core.test.mjs 新增跨小节延音、MIDI 单次触发与降 G 调覆盖。

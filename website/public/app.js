@@ -207,11 +207,7 @@ $("saveProject").onclick=()=>{
   toast("工程已保存；不包含接口地址、模型和密钥。");
 };
 $("openProject").onclick=()=>$("projectInput").click();
-$("projectInput").onchange=async event=>{
-  const file=event.target.files[0];if(!file)return;
-  if(file.size>18*1024*1024)return toast("工程文件过大。");
-  try {
-    const project=JSON.parse(await file.text());
+async function applyProject(project) {
     if(project.format!=="JianpuUke"||project.version!==1||typeof project.score?.text!=="string")throw new Error("不是受支持的简谱小尤工程。");
     const fields={title:"titleInput",text:"notesInput",key:"keyInput",meter:"meterInput",bpm:"bpmInput",tuning:"tuningInput",octaveShift:"octaveInput",maxFret:"fretsInput"};
     for(const [key,id]of Object.entries(fields))if(project.score[key]!==undefined)$(id).value=project.score[key];
@@ -224,10 +220,29 @@ $("projectInput").onchange=async event=>{
     } else {
       state.image=null;state.original="";state.crop=null;$("imagePanel").hidden=true;$("dropzone").hidden=false;$("recognizeBtn").disabled=true;
     }
-    notices("ocrWarnings",["工程已打开，请复核音符。接口信息不从工程导入。"]);await generate();
+    const warnings=Array.isArray(project.warnings)?project.warnings.slice(0,20).map(x=>String(x).slice(0,500)):[];
+    notices("ocrWarnings",["工程已打开，请复核音符。接口信息不从工程导入。",...warnings]);await generate();
+}
+$("projectInput").onchange=async event=>{
+  const file=event.target.files[0];if(!file)return;
+  if(file.size>18*1024*1024)return toast("工程文件过大。");
+  try {
+    await applyProject(JSON.parse(await file.text()));
   }catch(error){toast(error.message);}
   event.target.value="";
 };
+async function loadTonghua() {
+  if(state.busy)return;
+  state.busy=true;$("tonghuaDemoBtn").disabled=true;
+  try {
+    const response=await fetch("/examples/tonghua.jianpuuke.json");
+    if(!response.ok)throw new Error("示例加载失败，请刷新后重试。");
+    stopPlayback();await applyProject(await response.json());
+    toast("已载入《童话》完整旋律：65 小节，未调用 AI。");
+  }catch(error){toast(error.message);}
+  finally{state.busy=false;$("tonghuaDemoBtn").disabled=false;updateExports();}
+}
+$("tonghuaDemoBtn").onclick=loadTonghua;
 function stopPlayback() {
   for(const timer of state.timers)clearTimeout(timer);state.timers=[];
   if(state.audio){state.audio.close().catch(()=>{});state.audio=null;}
@@ -244,12 +259,14 @@ $("playBtn").onclick=async()=>{
   let offset=0;
   for(const [index,note]of state.score.notes.entries()) {
     const duration=note.duration*seconds;
-    if(note.midi!==null) {
+    let soundingDuration=duration,tiedIndex=index;
+    while(state.score.notes[tiedIndex].tieStart){tiedIndex++;soundingDuration+=state.score.notes[tiedIndex].duration*seconds;}
+    if(note.midi!==null&&!note.tieStop) {
       const oscillator=ctx.createOscillator(), gain=ctx.createGain();
       oscillator.type="triangle";oscillator.frequency.value=440*Math.pow(2,(note.midi-69)/12);
       gain.gain.setValueAtTime(0,start+offset);gain.gain.linearRampToValueAtTime(.20,start+offset+.012);
-      gain.gain.exponentialRampToValueAtTime(.001,start+offset+Math.max(.02,duration*.93));
-      oscillator.connect(gain);gain.connect(ctx.destination);oscillator.start(start+offset);oscillator.stop(start+offset+duration);
+      gain.gain.exponentialRampToValueAtTime(.001,start+offset+Math.max(.02,soundingDuration*.93));
+      oscillator.connect(gain);gain.connect(ctx.destination);oscillator.start(start+offset);oscillator.stop(start+offset+soundingDuration);
     }
     state.timers.push(setTimeout(()=>{
       document.querySelectorAll("#scoreOutput g.active").forEach(g=>g.classList.remove("active"));
@@ -265,6 +282,7 @@ $("quitBtn").onclick=()=>{
 };
 state.token="browser-local";
 $("versionText").textContent="简谱小尤网页版 v"+VERSION+" · "+BUILD_DATE;
+if(location.hash==="#example=tonghua")loadTonghua();
 initCatalog({
   isBusy:()=>state.busy,toast,
   onImport:async({dataUrl,title,sourceUrl,page})=>{

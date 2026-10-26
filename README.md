@@ -2,12 +2,14 @@
 
 **将简谱图片转录成可校对的音符，再生成尤克里里四线弹奏谱。**
 
-版本 **0.3.1** · 构建日期 **2026-10-26** · MIT 开源
+版本 **0.4.0** · 构建日期 **2026-10-26** · MIT 开源
 项目地址：https://github.com/xhnwill/youkelili
 
 现已提供在线网页版和 Windows 本机版。图片识别使用你配置的联网视觉模型；音符解析、指法计算、试听、导出在浏览器或本机完成。软件不自带 AI 账号或额度，不含本地 OCR 模型。
 
 **在线使用：[youkelili.xiao-dev.top](https://youkelili.xiao-dev.top)**
+
+v0.4.0 新增用户上传《童话》的完整转换示例：原调 Gb、4/4、78 BPM，按确认路线展开 65 小节，提供 5 页 PDF、工程、SVG、MIDI、MusicXML；补充同音延音连接和降 G 调。点击网站“载入《童话》四线谱”，或打开 [示例直达链接](https://youkelili.xiao-dev.top/#example=tonghua)。详见 [转换说明](docs/TONGHUA.md)。
 
 v0.3.1 修复 AI JSON 回复兼容：启用 JSON 输出约束，适配 Kimi K3 思考参数，识别截断与空结果，兼容文本分块、代码围栏与说明文字。
 
@@ -15,7 +17,7 @@ v0.3.0 新增“在线找谱”：简谱之家目录分页、曲名搜索、乐�
 
 网页版无需安装，手机和电脑浏览器均可打开。点击“识谱接口”填写完整 HTTPS 地址、支持图片的模型名和自己的密钥，再上传图片识别。图片选区与密钥经网站临时转发到你配置的服务商，不保存到网站数据库；仍需对照原谱校对。
 
-网页代码与 Cloudflare 部署配置在 [website/](website/README.md)，部署与验证说明见 [网页版部署](docs/WEB_DEPLOYMENT.md)。本次部署到用户指定的 Cloudflare 账户，GitHub 用于源码管理，未部署到 GitHub Pages 或 Sites。此前提供的 Windows 便携包仍为 v0.1.0；本次交付重点为在线 v0.3.1。
+网页代码与 Cloudflare 部署配置在 [website/](website/README.md)，部署与验证说明见 [网页版部署](docs/WEB_DEPLOYMENT.md)。本次部署到用户指定的 Cloudflare 账户，GitHub 用于源码管理，未部署到 GitHub Pages 或 Sites。此前提供的 Windows 便携包仍为 v0.1.0；本次交付重点为在线 v0.4.0。
 
 ![实际生成的简谱对照四线谱](docs/preview.png)
 

@@ -46,6 +46,10 @@ Kimi K3 模型自动使用 max_completion_tokens、较低思考强度与 JSON �
 
 服务商若只支持不同请求协议，需要增加适配器，不能仅改模型名。API Key 和地址不进入保存的工程。
 
+## 完整示例
+
+工作台可直接加载用户上传《童话》谱图的转录工程；#example=tonghua 可直达。示例不调用 AI，保留原调 Gb、每小节节奏与同音延音，并按用户确认路线展开反复；资源及 PDF 位于 public/examples/，校对边界见 ../docs/TONGHUA.md。
+
 ## 目录
 
 - app/：中文工作台页面与服务端路由。
@@ -57,6 +61,6 @@ Kimi K3 模型自动使用 max_completion_tokens、较低思考强度与 JSON �
 - cloudflare.json：用户明确指定的 Cloudflare Worker／账户／自定义域名。
 - components/、hooks/、db/、drizzle/、examples/：保留的模板支持；当前页面不使用数据库或连接器。
 
-25 项 Node 测试覆盖来源站解析、分页、选图、来源限制，以及 26 组调号／定弦与 Python 参考结果、音域、节奏、导出和模拟视觉协议。真实 AI 准确率仍需要配置实际服务并逐音检查用户谱图。
+28 项 Node 测试覆盖来源站解析、分页、选图、来源限制，以及 26 组调号／定弦与 Python 参考结果、音域、节奏、导出和模拟视觉协议。真实 AI 准确率仍需要配置实际服务并逐音检查用户谱图。
 
 项目源码：https://github.com/xhnwill/youkelili
